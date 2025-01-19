@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Link, useNavigate } from "react-router-dom";
-import Socialmedia from './Socialmedia';
+import Socialmedia from '../Components/Socialmedia';
 
 function Body() {
   const navigate = useNavigate();
