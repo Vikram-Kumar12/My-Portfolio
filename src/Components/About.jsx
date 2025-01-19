@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Socialmedia from "./socialmedia";
+import Socialmedia from './Socialmedia';
 import { Link } from "react-router-dom";
 
 function About() {
