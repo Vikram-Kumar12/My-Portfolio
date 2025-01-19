@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import Socialmedia from "./socialmedia";
+import Socialmedia from './Socialmedia';
 
 function Contact() {
   const form = useRef();
