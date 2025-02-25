@@ -1,4 +1,5 @@
 import React from "react";
+import { SiRedux } from "react-icons/si";
 function Skills() {
   let programing = [
     {
@@ -7,7 +8,7 @@ function Skills() {
         <svg
           stroke="#00EEFF"
           fill="#00EEFF"
-          strokeWidth="0"
+          stroke-width="0"
           viewBox="0 0 384 512"
           height="2em"
           width="2em"
@@ -25,7 +26,7 @@ function Skills() {
         <svg
           stroke="#00EEFF"
           fill="#00EEFF"
-          strokeWidth="0"
+          stroke-width="0"
           viewBox="0 0 384 512"
           height="2em"
           width="2em"
@@ -43,7 +44,7 @@ function Skills() {
         <svg
           stroke="#00EEFF"
           fill="#00EEFF"
-          strokeWidth="0"
+          stroke-width="0"
           viewBox="0 0 512 512"
           height="2em"
           width="2em"
@@ -61,7 +62,7 @@ function Skills() {
         <svg
           stroke="#00EEFF"
           fill="#00EEFF"
-          strokeWidth="0"
+          stroke-width="0"
           viewBox="0 0 512 512"
           height="2em"
           width="2em"
@@ -81,7 +82,7 @@ function Skills() {
         <svg
           stroke="#00EEFF"
           fill="#00EEFF"
-          strokeWidth="0"
+          stroke-width="0"
           viewBox="0 0 24 24"
           height="2em"
           width="2em"
@@ -99,7 +100,7 @@ function Skills() {
         <svg
           stroke="#00EEFF"
           fill="#00EEFF"
-          strokeWidth="0"
+          stroke-width="0"
           viewBox="0 0 512 512"
           height="2em"
           width="2em"
@@ -152,7 +153,7 @@ function Skills() {
         <svg
           stroke="#00EEFF"
           fill="#00EEFF"
-          strokeWidth="0"
+          stroke-width="0"
           viewBox="0 0 496 512"
           height="2em"
           width="2em"
@@ -170,7 +171,7 @@ function Skills() {
         <svg
           stroke="#00EEFF"
           fill="#00EEFF"
-          strokeWidth="0"
+          stroke-width="0"
           viewBox="0 0 16 16"
           height="2em"
           width="2em"

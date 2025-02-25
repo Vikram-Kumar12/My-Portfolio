@@ -1,3 +1,4 @@
+import { div } from "framer-motion/client";
 import React from "react";
 function Socialmedia() {
   let socialmedia = [
@@ -23,7 +24,7 @@ function Socialmedia() {
         <svg
           stroke="#00EEFF"
           fill="#00EEFF"
-          strokeWidth="0"
+          stroke-width="0"
           viewBox="0 0 496 512"
           height="1em"
           width="1em"
@@ -40,7 +41,7 @@ function Socialmedia() {
         <svg
           stroke="#00EEFF"
           fill="#00EEFF"
-          strokeWidth="0"
+          stroke-width="0"
           viewBox="0 0 512 512"
           color="#00EEFF"
           height="1em"
@@ -58,7 +59,7 @@ function Socialmedia() {
         <svg
           stroke="currentColor"
           fill="currentColor"
-          strokeWidth="0"
+          stroke-width="0"
           viewBox="0 0 512 512"
           color="#00EEFF"
           height="1em"
@@ -76,7 +77,7 @@ function Socialmedia() {
         <svg
           stroke="currentColor"
           fill="currentColor"
-          strokeWidth="0"
+          stroke-width="0"
           viewBox="0 0 448 512"
           color="#00EEFF"
           height="1em"

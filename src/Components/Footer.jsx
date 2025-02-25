@@ -1,5 +1,5 @@
+import { div } from "framer-motion/client";
 import React from "react";
-
 function Footer() {
   const scrollToTop = () => {
     window.scrollTo({
@@ -7,22 +7,18 @@ function Footer() {
       behavior: "smooth", // This will enable smooth scrolling
     });
   };
-
   return (
-    <div className="w-full py-5 bg-[#170A3F]">
+    <div className="w-full">
+
       <div className="flex items-center justify-between mt-5 sm:px-5 px-3">
-        <h1 className="text-sm sm:text-xl text-white">
+        <h1 className="text-sm sm:text-xl ">
           Copyrights © 2024 by @Vikram | All rights Reserved.
         </h1>
-        <h1
-          onClick={scrollToTop}
-          className="bg-[#1CE8F7] rounded-lg px-3 py-2 cursor-pointer flex items-center justify-center"
-        >
+        <h1 onClick={scrollToTop} className="bg-[#1CE8F7] rounded-lg px-2 py-1">
           <svg
-            className="text-white"
-            stroke="currentColor"
-            fill="currentColor"
-            strokeWidth="0"
+            stroke="white"
+            fill="white"
+            stroke-width="0"
             viewBox="0 0 1024 1024"
             height="2em"
             width="2em"
@@ -32,8 +28,8 @@ function Footer() {
           </svg>
         </h1>
       </div>
+      
     </div>
   );
 }
-
 export default Footer;

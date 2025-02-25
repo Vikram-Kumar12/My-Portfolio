@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import image1 from "/image1.png";
 import image2 from "/image2.png";
 import image3 from "/image3.png";
 import image4 from "/image4.png";
+import image5 from "/image5.png";
+import { ImGift } from "react-icons/im";
+import { h1, h2 } from "framer-motion/client";
 function Project() {
   let project = [
     {
@@ -15,7 +18,7 @@ function Project() {
         <svg
           stroke="#00EEFF"
           fill="#00EEFF"
-          strokeWidth="0"
+          stroke-width="0"
           viewBox="0 0 512 512"
           height="2em"
           width="2em"
@@ -26,7 +29,7 @@ function Project() {
         <svg
           stroke="#00EEFF"
           fill="#00EEFF"
-          strokeWidth="0"
+          stroke-width="0"
           viewBox="0 0 448 512"
           height="2em"
           width="2em"
@@ -37,7 +40,7 @@ function Project() {
         <svg
           stroke="#00EEFF"
           fill="#00EEFF"
-          strokeWidth="0"
+          stroke-width="0"
           viewBox="0 0 24 24"
           height="2em"
           width="2em"
@@ -77,7 +80,7 @@ function Project() {
         <svg
           stroke="#00EEFF"
           fill="#00EEFF"
-          strokeWidth="0"
+          stroke-width="0"
           viewBox="0 0 512 512"
           height="2em"
           width="2em"
@@ -88,7 +91,7 @@ function Project() {
         <svg
           stroke="#00EEFF"
           fill="#00EEFF"
-          strokeWidth="0"
+          stroke-width="0"
           viewBox="0 0 24 24"
           height="2em"
           width="2em"
@@ -99,7 +102,7 @@ function Project() {
         <svg
           stroke="#00EEFF"
           fill="#00EEFF"
-          strokeWidth="0"
+          stroke-width="0"
           viewBox="0 0 512 512"
           height="2em"
           width="2em"
@@ -139,7 +142,7 @@ function Project() {
         <svg
           stroke="#00EEFF"
           fill="#00EEFF"
-          strokeWidth="0"
+          stroke-width="0"
           viewBox="0 0 512 512"
           height="2em"
           width="2em"
@@ -150,7 +153,7 @@ function Project() {
         <svg
           stroke="#00EEFF"
           fill="#00EEFF"
-          strokeWidth="0"
+          stroke-width="0"
           viewBox="0 0 24 24"
           height="2em"
           width="2em"
@@ -161,7 +164,7 @@ function Project() {
         <svg
           stroke="#00EEFF"
           fill="#00EEFF"
-          strokeWidth="0"
+          stroke-width="0"
           viewBox="0 0 512 512"
           height="2em"
           width="2em"
@@ -196,12 +199,12 @@ function Project() {
       description:
         "Created a pixel-perfect clone of the Obey Agency website, featuring immersive animations, smooth transitions, and a sophisticated user interface to replicate the original design experience.",
       Name: "Obys Agency Clone",
-      icon: ["HTML", "CSS", "JavaScript", "Gsap"],
+      icon: ["HTML", "CSS", "JavaScript", "Gsap", "Sheryjs"],
       svg: [
         <svg
           stroke="#00EEFF"
           fill="#00EEFF"
-          strokeWidth="0"
+          stroke-width="0"
           viewBox="0 0 384 512"
           height="2em"
           width="2em"
@@ -212,7 +215,7 @@ function Project() {
         <svg
           stroke="#00EEFF"
           fill="#00EEFF"
-          strokeWidth="0"
+          stroke-width="0"
           viewBox="0 0 512 512"
           height="2em"
           width="2em"
@@ -223,7 +226,7 @@ function Project() {
         <svg
           stroke="#00EEFF"
           fill="#00EEFF"
-          strokeWidth="0"
+          stroke-width="0"
           viewBox="0 0 512 512"
           height="2em"
           width="2em"
@@ -256,34 +259,34 @@ function Project() {
   ];
 
   return (
-  <div className="w-full mt-20 sm:mt-32">
+    <div className="w-full mt-20 sm:mt-32">
   {project.map((elem, index) => (
-    <div key={index}>
+    <>
       {/* desktop */}
-      <div key={elem.id}
+      <div key={index}
          // Unique key for desktop view
         style={{ fontFamily: "normal" }}
-        className="hidden sm:block w-[100%] h-[60vh] py-5 px-10"
+        className="hidden sm:block w-[100%] lg:h-[60vh] sm:h-[100vh] py-5 px-10"
       >
         <div 
           style={{
             background:
               "linear-gradient(90deg, rgba(7,1,41,1) 0%, rgba(53,75,161,1) 47%, rgba(2,0,36,1) 100%)",
           }}
-          className="flex w-full h-full py-5 px-5 rounded-lg"
+          className="lg:flex w-full h-full py-5 px-5 rounded-lg"
         >
-          <div  className="w-[40%] h-full relative group">
+          <div  className="sm:ml-10 lg:ml-0 sm:w-[90%] lg:w-[40%] sm:h-[50%] lg:h-full relative group">
             {/* Default Image */}
             <img 
-              className="w-full h-full object-fill rounded-lg absolute top-0 left-0 z-[2] group-hover:hidden"
+              className="w-full h-full object-fill rounded-lg absolute top-0 left-0 z-[2] group-hover:hidden sm:hidden lg:block"
               src={elem.img}
               alt=""
             />
             {/* Video that plays when hovering */}
             <iframe
-              allow="autoplay loop muted"
+              allow="autoplay; loop; muted"
               allowFullScreen
-              className="z-[1] w-full h-full object-fill rounded-lg mr-2 absolute top-0 group-hover:block hidden"
+              className="z-[1] w-full h-full object-fill rounded-lg mr-2 absolute top-0 lg:group-hover:block lg:hidden"
               src={elem.video}
             ></iframe>
           </div>
@@ -293,7 +296,7 @@ function Project() {
               background:
                 "linear-gradient(90deg, rgba(7,1,41,1) 0%, rgba(53,75,161,1) 47%, rgba(2,0,36,1) 100%)",
             }}
-            className="w-[70%] px-10 rounded-lg"
+            className="sm:ml-10 lg:ml-0 sm:w-[90%] w-[70%] px-10 rounded-lg"
           >
             <h1  className="text-4xl mt-2 font-semibold">{elem.Name}</h1>
             <p  className="text-lg mt-2">{elem.description}</p>
@@ -301,11 +304,7 @@ function Project() {
             <div  className="">
               <h1 className="mt-2 text-2xl font-semibold">Build With</h1>
               <div  className="mt-5">
-              <a className="flex gap-5">
-                {elem.svg.map((svgElement, idx) => (
-                  <span key={idx.id}>{svgElement}</span> // Ensure each svg element has a unique key
-                ))}
-              </a>
+                <a  className="flex gap-5">{elem.svg}</a>
               </div>
             </div>
 
@@ -313,7 +312,7 @@ function Project() {
               <a 
                 target="blank"
                 href={elem.liveurl}
-                className="bg-[#00EEFF]  shadow-[0_0_15px_#00EEFF] hover:shadow-[0_0_0px_#00EEFF] px-4 py-1 text-zinc-800 font-mono rounded-full transition-shadow duration-300 ease-in-out"
+                className="bg-[#00EEFF] shadow-[0_0_15px_#00EEFF] hover:shadow-[0_0_0px_#00EEFF] px-4 py-1 text-zinc-800 font-mono rounded-full transition-shadow duration-300 ease-in-out"
               >
                 {elem.livebutton}
               </a>
@@ -327,7 +326,7 @@ function Project() {
       </div>
 
       {/* Mobile */}
-      <div key={elem.id}
+      <div
          // Unique key for mobile view
         className="block sm:hidden w-full h-[90vh] py-5"
       >
@@ -340,7 +339,7 @@ function Project() {
         >
           <div  className="w-full h-[100%]">
             <iframe
-              allow= "autoplay  loop muted"
+              allow="autoplay; loop; muted"
               allowFullScreen
               className="w-full h-full object-fill rounded-lg"
               src={elem.video}
@@ -363,9 +362,7 @@ function Project() {
             <div >
               <h1  className="mt-2 text-2xl font-semibold">Build With</h1>
               <div  className=" flex items-center flex-wrap mt-5 gap-5">
-              {elem.svg.map((svgElement, idx) => (
-                <span key={idx}>{svgElement}</span> // Ensure each svg element has a unique key
-              ))}
+                {elem.svg}
               </div>
             </div>
 
@@ -387,9 +384,9 @@ function Project() {
 
       </div>
 
-    </div>
+    </>
   ))}
-</div>
+    </div>
 
   );
 }
