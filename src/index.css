@@ -2,15 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
- @font-face {
-    font-family: 'Moranga';
-    src: url('./assets/fonts/Moranga.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-   /* // Optional: Apply the font globally  */
-   body {
-    font-family: 'Moranga', sans-serif;
-  } 
+@font-face {
+  font-family: 'font2';
+  src: url('../public/assets/font2.woff') format('truetype'); 
+  font-weight:700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'font1';
+  src: url('../public/assets/font1.ttf') format('truetype'); 
+  font-weight:700;
+  font-style: normal;
+}
   
