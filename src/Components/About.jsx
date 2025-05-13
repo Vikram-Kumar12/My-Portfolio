@@ -1,91 +1,65 @@
-import React, { useState } from "react";
-import Socialmedia from './Socialmedia';
-import { Link } from "react-router-dom";
-function About() {
-  // for cv , agr upload hai to dowloand ho, nhi to alert show ho
-    const [isCvUploaded,setisCvUploaded] = useState(false);
-    const handleDownloadCv = (e)=>{
-      if (!isCvUploaded) {
-        e.preventDefault(); // Prevent navigation
-        alert("Resume abhi uploded nahi hai! Kripya baad mein check karein.");
-      }
-    }
+import { useState} from "react";
+
+const About = () => {
+  const [isExpanded, setIsExpanded] = useState(false);
 
   return (
-    <div className="w-full mt-10 sm:mt-32 overflow-hidden">
+    <div className="flex flex-col lg:flex-row">
 
-      <div 
-       className="sm:w-[90%] w-[95%] ml-3 mr-3 sm:ml-7 lg:ml-20 lg:flex lg:items-center lg:justify-center flex-col sm:py-20 py-5  bg-[#390F7C] rounded-lg sm:px-0 ">
+      {/* Right Content - Scrollable */}
+      <div className="w-full lg:w-2/3 lg:ml-[33.33%] px-4 sm:px-8 lg:p-8 xl:p-12 mb-10 ">
+        <div className="px-4 sm:px-6 transition-all duration-300">
+          {/* Short About */}
+          <p className="text-gray-700 mb-4 text-base sm:text-medium">
+            Hello! I'm Vikram Kumar, a Front-End Developer with a strong
+            foundation in web technologies including HTML, CSS, JavaScript,
+            Tailwind CSS, and React.js. Currently pursuing my Bachelor of
+            Computer Applications (BCA), I bring both academic understanding and
+            real-world project experience to the table.
+          </p>
 
-        <h1 className="hidden sm:block text-3xl  sm:w-fit w-[70%] text-center sm:ml-20">
-          Hii, MY NAME IS VIKRAM KUMAR
-        </h1>
-        <h1 className="sm:hidden text-4xl  sm:w-fit w-[90%] ml-5 sm:ml-0">
-          I'm Vikram Kumar.
-        </h1>
-        <h4
-          style={{ fontFamily: "Normal, sans-serif" }}
-          className="mt-5 text-xl hidden sm:blocksm:ml-20 "
-        >
-          I will either find a way, or make one.
-        </h4>
-        <h4
-          style={{ fontFamily: "Normal, sans-serif" }}
-          className="mt-3 text-2xl sm:hidden w-[90%] ml-5"
-        >
-          FrontEnd Web Developer
-        </h4>
-        <span className="hidden sm:block h-[1px] w-20 bg-[#148914] mt-5 sm:ml-60 lg:ml-0 "></span>
-        <p
-          style={{ fontFamily: "Normal, sans-serif" }}
-          className="ml-5 sm:ml-20 lg:ml-32 mt-5 text-left mr-3 sm:mr-0 sm:w-[70%] text-sm font-semibold"
-        >
-          Hi, I’m <span className="text-xl font-bold">Vikram Kumar</span>, a
-          passionate frontend developer dedicated to creating visually appealing
-          and user-friendly websites. I specialize in building responsive
-          designs that work seamlessly across all devices, ensuring the best
-          user experience.
-        </p>
-        <p
-          style={{ fontFamily: "Normal, sans-serif" }}
-          className="ml-5 sm:ml-20 lg:ml-32 mt-5 text-left mr-3 sm:mr-0 sm:w-[70%] text-sm font-semibold"
-        >
-          Though I’m at the start of my professional journey, I’ve spent
-          countless hours honing my skills in HTML, CSS, JavaScript, React, and
-          Tailwind CSS. From crafting small projects to experimenting with
-          innovative ideas, I’m always eager to learn and grow as a developer.
-        </p>
-        <p
-          style={{ fontFamily: "Normal, sans-serif" }}
-          className="ml-5 sm:ml-20 lg:ml-32 mt-5 text-left mr-3 sm:mr-0 sm:w-[70%] text-sm font-semibold"
-        >
-          I believe that great design is about solving problems and telling
-          stories. My goal is to collaborate with amazing people and bring
-          impactful ideas to life through clean, efficient, and modern code.
-        </p>
-        
-        <div className="w-full ml-5 mt-5 mb-5 block sm:hidden">
-         <Socialmedia/>
-        </div>
+          {/* Expanded About */}
+          {isExpanded && (
+            <div className="space-y-4 animate-fadeIn">
+              <p className="text-gray-700 text-base sm:text-medium">
+                Over the past few months, I've built several projects ranging
+                from responsive portfolio websites and movie apps to clone
+                applications like ExoApp. I've also actively solved over 200+
+                coding problems on LeetCode and 60+ on GeeksforGeeks,
+                continuously sharpening my problem-solving and algorithmic
+                thinking.
+              </p>
+              <p className="text-gray-700 text-base sm:text-medium">
+                Beyond coding, I enjoy turning ideas into interactive, visually
+                appealing user experiences. I'm particularly focused on building
+                scalable, maintainable, and fast front-end applications. My
+                current goal is to strengthen my skills in backend development
+                using the MERN stack (MongoDB, Express.js, React, Node.js),
+                aiming to become a Full Stack Developer.
+              </p>
+              <p className="text-gray-700 text-base sm:text-medium">
+                I'm also an active participant in hackathons, academic projects,
+                and coding contests, always looking for opportunities to learn,
+                collaborate, and innovate. Whether working on a personal project
+                or contributing to a team, I always bring a positive attitude,
+                attention to detail, and eagerness to grow.
+              </p>
+            </div>
+          )}
 
-        <div className="mt-3 mb-5 sm:hidden ml-2 flex flex-wrap">
-          <Link to="/dowloandcv"
-             onClick={handleDownloadCv}
-            className="bg-[#00EEFF] shadow-[0_0_15px_#00EEFF] hover:shadow-[0_0_0px_#00EEFF] px-4 py-2 text-zinc-800 font-mono rounded-full transition-shadow duration-300 ease-in-out mb-5 mr-2"
+          {/* Toggle Text */}
+          <span
+            onClick={() => setIsExpanded(!isExpanded)}
+            className="text-indigo-600 hover:text-indigo-800 font-medium mt-2 cursor-pointer inline-block text-base sm:text-medium"
           >
-            Dowloand CV
-          </Link>
-          <Link to="/certificate"
-            // onClick={certificateHandler}
-            className="bg-[#00EEFF] shadow-[0_0_15px_#00EEFF] hover:shadow-[0_0_0px_#00EEFF] px-4 py-2 text-zinc-800 font-mono rounded-full transition-shadow duration-300 ease-in-out mb-5"
-          >
-            See Certification
-          </Link>
+            {isExpanded ? "read less" : "read more..."}
+          </span>
+          
         </div>
-        
       </div>
       
     </div>
   );
-}
+};
+
 export default About;
