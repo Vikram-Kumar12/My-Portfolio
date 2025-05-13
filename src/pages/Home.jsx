@@ -1,10 +1,10 @@
 import React from "react";
-import Hero from "../components/Hero";
-import Project from "../components/Project";
-import Skills from "../components/Skills";
-import ContactCards from "../components/Contact";
-import Education from "../components/Education";
-import GitHubLeetCodeWidget from "../components/GitHubLeetCodeWidget";
+import Hero from "../Components/Hero";
+import Project from "../Components/Project";
+import Skills from "../Components/Skills";
+import ContactCards from "../Components/Contact";
+import Education from "../Components/Education";
+import GitHubLeetCodeWidget from "../Components/GitHubLeetCodeWidget";
 function Home() {
     return(
         <div>
