@@ -175,6 +175,7 @@ import image1 from "../public/images/image1.png";
 import image2 from "../public/images/image2.png";
 import image3 from "../public/images/image3.png";
 import image4 from "../public/images/image4.png";
+import image5 from "../public/images/image5.png";
 
 export const projectData = [
   {
@@ -190,15 +191,28 @@ export const projectData = [
     description:
       "Developed a user-friendly movie application utilizing the TMDB API, enabling users to search a database of over 10,000 movies. ",
   },
-
   {
     id: 2,
+    title: "School Website",
+    date: "2025",
+    image: image5,
+    video:
+      "https://res.cloudinary.com/djhdbide5/video/upload/v1750696383/School_Website1_fvtgbu.mp4",
+    icon: ["React.js", "TailwindCSS", "Framer Motion"],
+    liveUrl: "https://little-flower-vidya-mandir.vercel.app/",
+    githubUrl: "https://github.com/Vikram-Kumar12/School-Website",
+    description:
+      " A modern, responsive school website built using ReactJS, Tailwind CSS, and JavaScript. It includes sections for student info, teachers, notice board, gallery, and contact form.",
+  },
+
+  {
+    id: 3,
     title: "Car-Website",
     date: "2025",
     image: image2,
     video:
       "https://res.cloudinary.com/djhdbide5/video/upload/v1747122681/Vite_React_-_Brave_2025-05-01_22-46-06_eswby3.mp4",
-    icon: ["React.js","TailwindCSS", "Framer Motion"],
+    icon: ["React.js", "TailwindCSS", "Framer Motion"],
     liveUrl: "https://car-website-f262.vercel.app/",
     githubUrl: "https://github.com/Vikram-Kumar12/Car-Website",
     description:
@@ -206,7 +220,7 @@ export const projectData = [
   },
 
   {
-    id: 3,
+    id: 4,
     title: "Exo Ape Clone",
     date: "2025",
     image: image3,
@@ -220,7 +234,7 @@ export const projectData = [
   },
 
   {
-    id: 4,
+    id: 5,
     title: "Refokus Clone",
     date: "2024",
     image: image4,

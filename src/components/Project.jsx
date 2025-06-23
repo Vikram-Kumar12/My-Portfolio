@@ -2,7 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import image1 from "../../public/images/image1.png";
-import image2 from "../../public/images/image2.png";
+import image5 from "../../public/images/image5.png";
 const MotionLink = motion(Link); // wrap the Link properly
 
 const Project = () => {
@@ -23,16 +23,16 @@ const Project = () => {
 
     {
       id: 2,
-      title: "Car-Website",
+      title: "School Website",
       date: "2025",
-      image: image2,
+      image: image5,
       video:
-        "https://res.cloudinary.com/djhdbide5/video/upload/v1747122681/Vite_React_-_Brave_2025-05-01_22-46-06_eswby3.mp4",
+        "https://res.cloudinary.com/djhdbide5/video/upload/v1750696383/School_Website1_fvtgbu.mp4",
       icon: ["React.js", "TailwindCSS", "Framer Motion"],
-      liveUrl: "https://car-website-f262.vercel.app/",
-      githubUrl: "https://github.com/Vikram-Kumar12/Car-Website",
+      liveUrl: "https://little-flower-vidya-mandir.vercel.app/",
+      githubUrl: "https://github.com/Vikram-Kumar12/School-Website",
       description:
-        " Developed a responsive and visually engaging web application that helps users find their ideal car based on preferences such as brand, budget, and features.",
+        " A modern, responsive school website built using ReactJS, Tailwind CSS, and JavaScript. It includes sections for student info, teachers, notice board, gallery, and contact form.",
     },
   ]);
 
