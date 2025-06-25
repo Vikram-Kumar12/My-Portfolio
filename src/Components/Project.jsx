@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import image1 from "../../public/images/image1.png";
+import image6 from "../../public/images/image6.png";
 import image5 from "../../public/images/image5.png";
 const MotionLink = motion(Link); // wrap the Link properly
 
@@ -9,6 +10,20 @@ const Project = () => {
   const [projects] = useState([
     {
       id: 1,
+      title: "LeetLab",
+      date: "2025",
+      image: image6,
+      video:
+        "https://res.cloudinary.com/djhdbide5/video/upload/v1750854764/audo_enhanced_LeetLab_-_Google_Chrome_2025-06-01_22-01-08_1_qdtete.mp4",
+      icon: ["React.js", "JavaScript", "TailwindCSS", "Framer Motion", "Node.js", "Express.js", "PostgreSQL", "Docker", "Judge0"],
+      liveUrl: "https://res.cloudinary.com/djhdbide5/video/upload/v1750854764/audo_enhanced_LeetLab_-_Google_Chrome_2025-06-01_22-01-08_1_qdtete.mp4",
+      githubUrl: "https://github.com/Vikram-Kumar12/Leetlab-Project",
+      description:
+        "A responsive coding practice platform built to simulate real-world coding environments. Developed interactive problem-solving interface using ReactJS and Tailwind CSS.",
+    },
+
+    {
+      id: 2,
       title: "Movie App",
       date: "2024",
       image: image1,
@@ -20,9 +35,8 @@ const Project = () => {
       description:
         "Developed a user-friendly movie application utilizing the TMDB API, enabling users to search a database of over 10,000 movies. ",
     },
-
     {
-      id: 2,
+      id: 3,
       title: "School Website",
       date: "2025",
       image: image5,

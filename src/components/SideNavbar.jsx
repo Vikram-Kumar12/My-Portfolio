@@ -5,7 +5,7 @@ const SideNavbar = () => {
   const [tapped, setTapped] = useState(false);
   const [isExpanded, setIsExpanded] = useState(false);
   const [currentRole, setCurrentRole] = useState(0);
-  const roles = ["Front-end Developer", "Software Engineer", "Problem Solver"];
+  const roles = ["Front-end Developer", "Backend Developer", "Problem Solver", "React Developer"];
 
   // Rotate roles every 3 seconds
   useEffect(() => {
