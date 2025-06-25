@@ -10,7 +10,7 @@ const About = () => {
         <div className="px-4 sm:px-6 transition-all duration-300">
           {/* Short About */}
           <p className="text-gray-700 mb-4 text-base sm:text-medium">
-            Hello! I'm Vikram Kumar, a Full-Stack Developer with expertise in
+            Hello! I'm Vikram Kumar, a Mern Stack Developer with expertise in
             both Frontend and Backend technologies. I have a strong foundation
             in HTML, CSS, JavaScript, Tailwind CSS, React.js, along with backend
             skills in Node.js, Express.js, MongoDB and PostgreSQL. Currently
