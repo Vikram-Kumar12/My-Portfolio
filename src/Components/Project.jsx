@@ -4,12 +4,26 @@ import { Link } from "react-router-dom";
 import image1 from "../../public/images/image1.png";
 import image6 from "../../public/images/image6.png";
 import image5 from "../../public/images/image5.png";
+import image7 from "../../public/images/image7.png";
 const MotionLink = motion(Link); // wrap the Link properly
 
 const Project = () => {
   const [projects] = useState([
     {
       id: 1,
+      title: "SELLNBUY",
+      date: "2025",
+      image: image7,
+      video:
+        "https://res.cloudinary.com/djhdbide5/video/upload/v1754388890/sellnbuy_ognfsj.mp4",
+      icon: ["React.js", "JavaScript", "TailwindCSS", "Node.js", "Express.js", "Mongo DB"],
+      liveUrl: "https://sellnbuy.vercel.app/",
+      githubUrl: "https://github.com/Vikram-Kumar12/Sab-Kharido-Sab-Becho-",
+      description:
+        "💡 What is SELLNBUY? SELLNBUY is a web-based marketplace where users can: ✔️ Buy second-hand products at minimal cost ✔️ Sell their own used items to reach other interested buyers The idea is to create a simplified and accessible platform where people can reuse resources and reduce waste 🌱",
+    },
+    {
+      id: 2,
       title: "LeetLab",
       date: "2025",
       image: image6,
@@ -21,9 +35,8 @@ const Project = () => {
       description:
         "A responsive coding practice platform built to simulate real-world coding environments. Developed interactive problem-solving interface using ReactJS and Tailwind CSS.",
     },
-
     {
-      id: 2,
+      id: 3,
       title: "Movie App",
       date: "2024",
       image: image1,
@@ -36,7 +49,7 @@ const Project = () => {
         "Developed a user-friendly movie application utilizing the TMDB API, enabling users to search a database of over 10,000 movies. ",
     },
     {
-      id: 3,
+      id: 4,
       title: "School Website",
       date: "2025",
       image: image5,

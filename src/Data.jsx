@@ -338,10 +338,31 @@ import image3 from "../public/images/image3.png";
 import image4 from "../public/images/image4.png";
 import image5 from "../public/images/image5.png";
 import image6 from "../public/images/image6.png";
+import image7 from "../public/images/image7.png";
 
 export const projectData = [
   {
     id: 1,
+    title: "SELLNBUY",
+    date: "2025",
+    image: image7,
+    video:
+      "https://res.cloudinary.com/djhdbide5/video/upload/v1754388890/sellnbuy_ognfsj.mp4",
+    icon: [
+      "React.js",
+      "JavaScript",
+      "TailwindCSS",
+      "Node.js",
+      "Express.js",
+      "Mongo DB",
+    ],
+    liveUrl: "https://sellnbuy.vercel.app/",
+    githubUrl: "https://github.com/Vikram-Kumar12/Sab-Kharido-Sab-Becho-",
+    description:
+      "💡 What is SELLNBUY? SELLNBUY is a web-based marketplace where users can: ✔️ Buy second-hand products at minimal cost ✔️ Sell their own used items to reach other interested buyers The idea is to create a simplified and accessible platform where people can reuse resources and reduce waste 🌱",
+  },
+  {
+    id: 2,
     title: "LeetLab",
     date: "2025",
     image: image6,
@@ -358,13 +379,14 @@ export const projectData = [
       "Docker",
       "Judge0",
     ],
-    liveUrl: "https://res.cloudinary.com/djhdbide5/video/upload/v1750854764/audo_enhanced_LeetLab_-_Google_Chrome_2025-06-01_22-01-08_1_qdtete.mp4",
+    liveUrl:
+      "https://res.cloudinary.com/djhdbide5/video/upload/v1750854764/audo_enhanced_LeetLab_-_Google_Chrome_2025-06-01_22-01-08_1_qdtete.mp4",
     githubUrl: "https://github.com/Vikram-Kumar12/Leetlab-Project",
     description:
       "A responsive coding practice platform built to simulate real-world coding environments. Developed interactive problem-solving interface using ReactJS and Tailwind CSS.",
   },
   {
-    id: 2,
+    id: 3,
     title: "Movie App",
     date: "2024",
     image: image1,
@@ -377,7 +399,7 @@ export const projectData = [
       "Developed a user-friendly movie application utilizing the TMDB API, enabling users to search a database of over 10,000 movies. ",
   },
   {
-    id: 3,
+    id: 4,
     title: "School Website",
     date: "2025",
     image: image5,
@@ -391,7 +413,7 @@ export const projectData = [
   },
 
   {
-    id: 4,
+    id: 5,
     title: "Car-Website",
     date: "2025",
     image: image2,
@@ -405,7 +427,7 @@ export const projectData = [
   },
 
   {
-    id: 5,
+    id: 6,
     title: "Exo Ape Clone",
     date: "2025",
     image: image3,
@@ -419,7 +441,7 @@ export const projectData = [
   },
 
   {
-    id: 6,
+    id: 7,
     title: "Refokus Clone",
     date: "2024",
     image: image4,
