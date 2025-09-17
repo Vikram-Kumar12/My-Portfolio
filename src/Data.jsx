@@ -334,11 +334,10 @@ export const skillData = [
 
 import image1 from "../public/images/image1.png";
 import image2 from "../public/images/image2.png";
-import image3 from "../public/images/image3.png";
-import image4 from "../public/images/image4.png";
 import image5 from "../public/images/image5.png";
 import image6 from "../public/images/image6.png";
 import image7 from "../public/images/image7.png";
+import image8 from "../public/images/image8.png";
 
 export const projectData = [
   {
@@ -357,9 +356,8 @@ export const projectData = [
       "Mongo DB",
     ],
     liveUrl: "https://sellnbuy.vercel.app/",
-    githubUrl: "https://github.com/Vikram-Kumar12/Sab-Kharido-Sab-Becho-",
     description:
-      "💡 What is SELLNBUY? SELLNBUY is a web-based marketplace where users can: ✔️ Buy second-hand products at minimal cost ✔️ Sell their own used items to reach other interested buyers The idea is to create a simplified and accessible platform where people can reuse resources and reduce waste 🌱",
+      "SELLNBUY is a web-based marketplace where users can: ✔️ Buy second-hand products at minimal cost ✔️ Sell their own used items to reach other interested buyers The idea is to create a simplified and accessible platform where people can reuse resources and reduce waste 🌱",
   },
   {
     id: 2,
@@ -381,12 +379,32 @@ export const projectData = [
     ],
     liveUrl:
       "https://res.cloudinary.com/djhdbide5/video/upload/v1750854764/audo_enhanced_LeetLab_-_Google_Chrome_2025-06-01_22-01-08_1_qdtete.mp4",
-    githubUrl: "https://github.com/Vikram-Kumar12/Leetlab-Project",
     description:
       "A responsive coding practice platform built to simulate real-world coding environments. Developed interactive problem-solving interface using ReactJS and Tailwind CSS.",
   },
   {
     id: 3,
+    title: "Review Collection",
+    date: "2025",
+    image: image8,
+    video:
+      "https://res.cloudinary.com/djhdbide5/video/upload/v1758120398/Untitled_video_-_Made_with_Clipchamp_5_mvjyyj.mp4",
+    icon: [
+      "React.js",
+      "JavaScript",
+      "TailwindCSS",
+      "Node.js",
+      "Express.js",
+      "Mongo DB",
+      "Cloudinary",
+      "Multer",
+    ],
+    liveUrl: "https://www.review-collection.space/",
+    description:
+      "ReviewCollection is a full-stack web app designed to simulate a mini social media platform focused on user reviews. It's built for chaicode cohort batch to share their students opinions on chaicode cohort. Each review supports text, media (images/videos), hashtags, and URLs. Users can interact through likes, comments, and share posts via unique URLs.",
+  },
+  {
+    id: 4,
     title: "Movie App",
     date: "2024",
     image: image1,
@@ -394,12 +412,11 @@ export const projectData = [
       "https://res.cloudinary.com/djhdbide5/video/upload/v1737269500/Movie-Project_udo5jt.mp4",
     icon: ["React.js", "API", "TailwindCSS"],
     liveUrl: "https://movie-app-react-silk.vercel.app/",
-    githubUrl: "https://github.com/Vikram-Kumar12/Movie-App-React",
     description:
       "Developed a user-friendly movie application utilizing the TMDB API, enabling users to search a database of over 10,000 movies. ",
   },
   {
-    id: 4,
+    id: 5,
     title: "School Website",
     date: "2025",
     image: image5,
@@ -407,13 +424,12 @@ export const projectData = [
       "https://res.cloudinary.com/djhdbide5/video/upload/v1750696383/School_Website1_fvtgbu.mp4",
     icon: ["React.js", "TailwindCSS", "Framer Motion"],
     liveUrl: "https://little-flower-vidya-mandir.vercel.app/",
-    githubUrl: "https://github.com/Vikram-Kumar12/School-Website",
     description:
       " A modern, responsive school website built using ReactJS, Tailwind CSS, and JavaScript. It includes sections for student info, teachers, notice board, gallery, and contact form.",
   },
 
   {
-    id: 5,
+    id: 6,
     title: "Car-Website",
     date: "2025",
     image: image2,
@@ -424,33 +440,5 @@ export const projectData = [
     githubUrl: "https://github.com/Vikram-Kumar12/Car-Website",
     description:
       " Developed a responsive and visually engaging web application that helps users find their ideal car based on preferences such as brand, budget, and features.",
-  },
-
-  {
-    id: 6,
-    title: "Exo Ape Clone",
-    date: "2025",
-    image: image3,
-    video:
-      "https://res.cloudinary.com/djhdbide5/video/upload/v1737267613/WhatsApp_Video_2025-01-15_at_11.36.13_AM_pjilfy.mp4",
-    icon: ["React.js", "TailwindCSS", "Gsap"],
-    liveUrl: "https://exo-app-clone-jade.vercel.app/",
-    githubUrl: "https://github.com/Vikram-Kumar12/exo-App-Clone",
-    description:
-      "Built a responsive frontend for an exoApp clone, incorporating smooth animations and an engaging parallax scrolling design to enhance user interactivity.",
-  },
-
-  {
-    id: 7,
-    title: "Refokus Clone",
-    date: "2024",
-    image: image4,
-    video:
-      "https://res.cloudinary.com/djhdbide5/video/upload/v1737268795/Refokus-1_fnwayj.mp4",
-    icon: ["React.js", "TailwindCSS", "Gsap", "Framer Motion"],
-    liveUrl: "https://refokus-website-clone-one.vercel.app/",
-    githubUrl: "https://github.com/Vikram-Kumar12/Refokus-Website-Clone",
-    description:
-      "Developed a Refokus clone with visually appealing animations and seamless scrolling effects, ensuring an interactive and modern user experience.",
   },
 ];

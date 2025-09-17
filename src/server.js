@@ -16,12 +16,12 @@ const io = new Server(server, {
 const users = new Map();
 
 io.on('connection', (socket) => {
-  console.log('New client connected');
+  // console.log('New client connected');
   
   // Handle GitHub username registration
   socket.on('register', (username) => {
     users.set(socket.id, username);
-    console.log(`User ${username} registered`);
+    // console.log(`User ${username} registered`);
   });
   
   // Handle disconnection
@@ -49,16 +49,16 @@ app.post('/github-webhook', (req, res) => {
 // LeetCode polling endpoint
 const pollLeetCode = async (username) => {
   try {
-    const response = await axios.get(`https://leetcode.com/${username}/`);
+    await axios.get(`https://leetcode.com/${username}/`);
     // Parse HTML to get recent submissions
     // This would require HTML parsing logic
   } catch (error) {
-    console.error('LeetCode polling error:', error);
+    // console.error('LeetCode polling error:', error);
   }
 };
 
 server.listen(4000, () => {
-  console.log('Server running on port 4000');
+  // console.log('Server running on port 4000');
   // Start polling for each user periodically
   setInterval(() => {
     users.forEach((username, socketId) => {

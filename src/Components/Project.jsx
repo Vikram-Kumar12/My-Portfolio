@@ -18,9 +18,9 @@ const Project = () => {
         "https://res.cloudinary.com/djhdbide5/video/upload/v1754388890/sellnbuy_ognfsj.mp4",
       icon: ["React.js", "JavaScript", "TailwindCSS", "Node.js", "Express.js", "Mongo DB"],
       liveUrl: "https://sellnbuy.vercel.app/",
-      githubUrl: "https://github.com/Vikram-Kumar12/Sab-Kharido-Sab-Becho-",
+      // githubUrl: "https://github.com/Vikram-Kumar12/Sab-Kharido-Sab-Becho-",
       description:
-        "💡 What is SELLNBUY? SELLNBUY is a web-based marketplace where users can: ✔️ Buy second-hand products at minimal cost ✔️ Sell their own used items to reach other interested buyers The idea is to create a simplified and accessible platform where people can reuse resources and reduce waste 🌱",
+        "SELLNBUY is a web-based marketplace where users can: ✔️ Buy second-hand products at minimal cost and ✔️ Sell their own used items to reach other interested buyers.",
     },
     {
       id: 2,
@@ -31,7 +31,7 @@ const Project = () => {
         "https://res.cloudinary.com/djhdbide5/video/upload/v1750854764/audo_enhanced_LeetLab_-_Google_Chrome_2025-06-01_22-01-08_1_qdtete.mp4",
       icon: ["React.js", "JavaScript", "TailwindCSS", "Framer Motion", "Node.js", "Express.js", "PostgreSQL", "Docker", "Judge0"],
       liveUrl: "https://res.cloudinary.com/djhdbide5/video/upload/v1750854764/audo_enhanced_LeetLab_-_Google_Chrome_2025-06-01_22-01-08_1_qdtete.mp4",
-      githubUrl: "https://github.com/Vikram-Kumar12/Leetlab-Project",
+      // githubUrl: "https://github.com/Vikram-Kumar12/Leetlab-Project",
       description:
         "A responsive coding practice platform built to simulate real-world coding environments. Developed interactive problem-solving interface using ReactJS and Tailwind CSS.",
     },
@@ -44,7 +44,7 @@ const Project = () => {
         "https://res.cloudinary.com/djhdbide5/video/upload/v1737269500/Movie-Project_udo5jt.mp4",
       icon: ["React.js", "API", "TailwindCSS"],
       liveUrl: "https://movie-app-react-silk.vercel.app/",
-      githubUrl: "https://github.com/Vikram-Kumar12/Movie-App-React",
+      // githubUrl: "https://github.com/Vikram-Kumar12/Movie-App-React",
       description:
         "Developed a user-friendly movie application utilizing the TMDB API, enabling users to search a database of over 10,000 movies. ",
     },
@@ -57,7 +57,7 @@ const Project = () => {
         "https://res.cloudinary.com/djhdbide5/video/upload/v1750696383/School_Website1_fvtgbu.mp4",
       icon: ["React.js", "TailwindCSS", "Framer Motion"],
       liveUrl: "https://little-flower-vidya-mandir.vercel.app/",
-      githubUrl: "https://github.com/Vikram-Kumar12/School-Website",
+      // githubUrl: "https://github.com/Vikram-Kumar12/School-Website",
       description:
         " A modern, responsive school website built using ReactJS, Tailwind CSS, and JavaScript. It includes sections for student info, teachers, notice board, gallery, and contact form.",
     },
@@ -163,15 +163,6 @@ const Project = () => {
                     className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors duration-300 text-sm sm:text-base "
                   >
                     Live Demo
-                  </a>
-                  <a
-                    style={{ fontFamily: "font2" }}
-                    href={project.githubUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="px-4 py-2 border border-gray-300 text-gray-700 rounded-md hover:bg-gray-100 transition-colors duration-300 text-sm sm:text-base "
-                  >
-                    GitHub
                   </a>
                 </div>
               </div>

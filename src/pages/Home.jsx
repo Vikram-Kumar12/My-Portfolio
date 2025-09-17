@@ -5,6 +5,7 @@ import Skills from "../components/Skills";
 import ContactCards from "../components/Contact";
 import Education from "../components/Education";
 import GitHubLeetCodeWidget from "../components/GitHubLeetCodeWidget";
+import ResumeAndCertificate from "../components/ResumeAndCertificate";
 function Home() {
     return(
         <div>
@@ -13,6 +14,7 @@ function Home() {
             <Skills/>
             <Education/>
             <GitHubLeetCodeWidget/>
+            <ResumeAndCertificate/>
             <ContactCards/>
         </div>
     )

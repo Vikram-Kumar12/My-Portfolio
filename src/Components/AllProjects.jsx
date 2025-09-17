@@ -21,8 +21,8 @@ const AllProjects = () => {
 
       <SideNavbar />
 
-      <section className="w-full lg:w-2/3 lg:ml-[33.33%] px-4 sm:px-8 lg:px-8 xl:px-12 py-10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+      <section className="w-full lg:w-2/3 lg:ml-[33.33%] px-4 sm:px-8 lg:px-8 xl:px-12 py-10 ">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 ">
           <div className="flex items-center justify-between mb-7">
             <h2
               style={{ fontFamily: "font2" }}
@@ -40,7 +40,7 @@ const AllProjects = () => {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
-                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border-1 border-zinc-300"
+                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border-1 border-zinc-300 h-fit"
               >
                 {/* Project Image (Top half) */}
                 <div className="relative group h-48 sm:h-56 overflow-hidden rounded-xl">
@@ -103,15 +103,6 @@ const AllProjects = () => {
                       className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors duration-300 text-sm sm:text-base "
                     >
                       Live Demo
-                    </a>
-                    <a
-                      style={{ fontFamily: "font2" }}
-                      href={project.githubUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="px-4 py-2 border border-gray-300 text-gray-700 rounded-md hover:bg-gray-100 transition-colors duration-300 text-sm sm:text-base "
-                    >
-                      GitHub
                     </a>
                   </div>
                 </div>
