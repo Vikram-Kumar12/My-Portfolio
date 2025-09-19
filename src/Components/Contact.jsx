@@ -118,7 +118,7 @@ export default function ContactCards() {
         {contacts.map((contact, index) => (
           <motion.div
             key={contact.id}
-            className="rounded-2xl shadow-md px-2 py-5 hover:shadow-xl transition-all border-1 border-gray-200"
+            className="rounded-2xl shadow-md px-2 py-5 hover:shadow-xl transition-all border-1 border-gray-200 "
             custom={index}
             initial="hidden"
             animate="visible"

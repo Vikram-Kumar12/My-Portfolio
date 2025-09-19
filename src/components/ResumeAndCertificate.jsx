@@ -115,14 +115,14 @@ const ResumeAndCertificate = () => {
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: 20 }}
                 transition={{ duration: 0.3 }}
-                className="mb-12"
+                className="mb-12 md:flex items-center gap-10"
               >
-                <div className="bg-gray-50 w-fit mb-5 px-6 py-10 rounded-lg hover:shadow-lg border border-gray-100">
+                <div className="rounded-2xl shadow-md px-10 py-5 hover:shadow-xl transition-all border-1 border-gray-200 mb-6 md:mb-0">
                   <h3 style={{ fontFamily: "font2" }} className="text-xl font-semibold text-gray-800 mb-4">
                     MERN Stack Developer
                   </h3>
 
-                  <div className="flex flex-col sm:flex-row gap-4">
+                  <div className="flex flex-col gap-4">
                     <motion.button
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
@@ -176,12 +176,12 @@ const ResumeAndCertificate = () => {
                     </motion.button>
                   </div>
                 </div>
-                <div className="bg-gray-50 w-fit  px-6 py-10 rounded-lg hover:shadow-lg border border-gray-100">
+                <div className="rounded-2xl shadow-md px-10 py-5 hover:shadow-xl transition-all border-1 border-gray-200 ">
                   <h3 style={{ fontFamily: "font2" }} className="text-xl font-semibold text-gray-800 mb-4">
                     Front-End Developer
                   </h3>
 
-                  <div className="flex flex-col sm:flex-row gap-4">
+                  <div className="flex flex-col gap-4">
                     <motion.button
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
